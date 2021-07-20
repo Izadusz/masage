@@ -1,0 +1,138 @@
+body {
+font-family: 'Akaya Kanadaka', cursive;;   
+}
+
+
+.wrapper {
+    height               : 100%;
+    background-image     : url("img/young-woman-having-face-massage-relaxing-spa-salon.jpg");
+    background-attachment: fixed;
+    background-position  : center;
+    background-repeat    : no-repeat;
+    background-size      : cover;
+}
+
+.navbar-brand {
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+    font-family: 'Akaya Kanadaka', cursive;
+    font-size  : 7vmax;
+    left       : 25vw;
+    color: rgb(255, 255, 255);
+}
+
+
+
+.title {
+    width              : 80%;
+    height             : 100vh;
+    margin-top         : 20px;
+    opacity            : 0;
+    animation-name     : animated-title;
+    animation-delay    : 1s;
+    animation-duration : 6s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animated-title {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+h2 {
+    font-size: 4vmax;
+}
+
+/* covid info */
+.box {
+    border-radius: 0px 4px 4px 0px;
+    left         : -304px;
+    padding      : 4px 4px 4px 0px;
+    position     : fixed;
+    top          : 250px;
+    transition   : transform 0.4s;
+    width        : 300px;
+    z-index      : 2;
+}
+
+.box:hover {
+    transform: translateX(304px);
+}
+
+.box .box__content {
+    background: #fff;
+    min-height: 200px;
+    padding   : 10px;
+    position  : relative;
+}
+
+.box .box__title {
+    background   : #fff;
+    border-radius: 0px 0px 4px 4px;
+    border-width : 0px 4px 4px;
+    cursor       : default;
+    font-size    : 18px;
+    height       : 30px;
+    line-height  : 30px;
+    position     : absolute;
+    right        : -74px;
+    text-align   : center;
+    top          : 70px;
+    transform    : rotate(-90deg);
+    width        : 106px;
+}
+
+/* covid-info-end */
+
+
+ul {
+    line-height: 170%;
+}
+
+.attribute {
+    position : absolute;
+    font-size: 0.5vmax;    
+    bottom: -100px;
+    transform: rotate(-90deg);
+}
+
+h2,
+ul,
+p {
+    color: black;
+}
+
+.styl {
+    opacity         : 0.5;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 500;    
+   
+}
+
+/* .preparation {
+ width: 40%;
+ margin-left: 100px;   
+} */
+
+@media all and (min-width: 768px) {   
+#description, #types {
+    width: 40%;
+    margin-right: 100px;
+}
+}
+
+@media all and (min-width: 768px) {
+    .preparation {
+        width: 40%;    
+        margin-left: 100px;       
+     }
+}
